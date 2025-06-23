@@ -18,3 +18,14 @@ console.time();
 setTimeout(() => {
   console.timeEnd();
 }, 1000);
+
+
+// Boite de dialogue
+// alert("Bonjour tout le monde!");
+
+// Récupérer une information au clavier
+let prenom = prompt("Comment t'appelles-tu ?");
+console.log(`Bonjour ${prenom}`);
+let anneeNaissance = prompt("En quel année es-tu né ?");
+let age = new Date().getFullYear() - +anneeNaissance;
+console.log(`Tu as donc ${age} ans.`);
