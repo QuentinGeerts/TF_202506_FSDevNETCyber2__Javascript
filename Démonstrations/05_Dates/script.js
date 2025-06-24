@@ -73,6 +73,7 @@ const formatDate = today.toLocaleDateString(navigator.language, {
   second: "2-digit", 
   fractionalSecondDigits: 3,
   weekday: "long",
+  era: "long"
 });
 
 console.log('formatDate :>> ', formatDate);
