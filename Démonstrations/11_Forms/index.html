@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js" defer></script>
+  <style>
+    form > * {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input:invalid {
+      border: 2px solid rgb(187, 90, 73);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <form name="formName">
+
+    <label for="firstname">Prénom: </label>
+    <input type="text" name="firstname" id="firstname">
+
+
+    <label for="isAdult">
+      <input type="checkbox" name="isAdult" id="isAdult">
+      Es-tu majeur ?
+    </label>
+
+    <button>Envoyer</button>
+
+  </form>
+
+
+</body>
+
+</html>
