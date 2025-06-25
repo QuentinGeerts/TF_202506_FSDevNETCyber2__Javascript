@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./script.js" defer></script>
+
+  <style>
+    form > * {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .error {
+      color: red;
+      border: 1px solid red;
+    }
+
+    input[type="text"], input[type="number"] {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form name="form">
+
+    <label for="lastname">Nom:</label>
+    <input type="text" name="lastname" id="lastname">
+
+    <label for="firstname">Prénom:</label>
+    <input type="text" name="firstname" id="firstname">
+
+    <label for="zipcode">Code postal:</label>
+    <input type="number" name="zipcode" id="zipcode">
+
+    <div>
+      <button type="button" id="auto-complete-btn">Auto-complétion</button>
+      <button type="button" id="reset-btn">Reset</button>
+      <button>Envoyer</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
